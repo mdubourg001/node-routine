@@ -2,12 +2,19 @@
 
 Inline, Promise based wrapper around JS Web Workers
 
+![GitHub](https://img.shields.io/github/license/mdubourg001/routine.svg)
+![npm](https://img.shields.io/npm/v/routine.svg)
+
+```shell
+yarn add worker-routine
+```
+
 ### Usage
 
 Using `async / await`:
 
 ```javascript
-import { routine } from "./routine";
+import routine from "worker-routine";
 
 const inneficientSquare = n => {
   let total = 0;
@@ -31,7 +38,7 @@ console.log(results[0] * results[1]);
 Using `Promise.then`:
 
 ```javascript
-import { routine } from "./routine";
+import routine from "worker-routine";
 
 const multiply = (a, b, c) => a * b * c;
 

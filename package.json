@@ -9,6 +9,7 @@
   "keywords": [
     "workers",
     "multithreading",
+    "async-await",
     "web-worker",
     "promise"
   ],
