@@ -1,6 +1,6 @@
 {
   "name": "worker-routine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Inline, Promise based wrapper around JS Web Workers.",
   "main": "dist/index.js",
   "repository": "https://github.com/mdubourg001/routine",
@@ -25,7 +25,7 @@
   "scripts": {
     "clean": "rm -rf .cache dist",
     "develop": "parcel index.html",
-    "build": "yarn clean && parcel build index.ts --out-dir dist",
+    "build": "yarn clean && parcel build index.ts --out-dir dist --no-minify",
     "prepublish": "yarn build"
   }
 }
