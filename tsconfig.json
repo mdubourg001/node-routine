@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "lib": ["ES2015", "DOM"],
+    "downlevelIteration": true,
+    "noEmitHelpers": false,
+    "importHelpers": true
+  }
+}
