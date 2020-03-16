@@ -46,3 +46,7 @@ routine(multiply, 2, 3, 10).then(
   console.log // => 60
 );
 ```
+
+⚠️ `routine` isn't magic, it is just a wrapper around Web Worker. **Every limitations you can encounter with Web Workers, you will encounter with `routine`**:
+
+- functions passed to `routine` must be **pure**: they must not have any side-effects: **no `fetch` calls, no references to global variables, etc...**
